@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Name App</title>
+    <style>
+        body{
+            background-color: rgb(141, 151, 179);
+
+        }
+        h1{
+            justify-content: center;
+            text-align: center;
+        }
+        #btn{
+            background-color: rgb(101, 160, 216);
+            color: white;
+            border: 2px solid black;
+            border-radius: 7px;
+            padding: 5px;
+        }
+        label{
+                color: black;
+        }
+      
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Full Name Search Application</h1>
+        <form id="nameForm">
+            <label for="firstName"><b>First Name :</b></label>
+            <input type="text" id="firstName" placeholder="Enter your first name" required>
+
+            <label for="middleName"><b>Middle Name :</b></label>
+            <input type="text" id="middleName" placeholder="Enter your middle name"  required>
+
+            <label for="lastName"><b>Last Name :</b></label>
+            <input type="text" id="lastName" placeholder="Enter your Surname name"  required>
+
+            <button type="button" id="btn">Submit</button>
+        </form>
+    </div>
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+    const submitBtn = document.getElementById('btn');
+
+    submitBtn.addEventListener('click', function () {
+        const firstName = document.getElementById('firstName').value;
+        const middleName = document.getElementById('middleName').value;
+        const lastName = document.getElementById('lastName').value;
+
+        let fullName = firstName;
+
+        if (middleName !== '') {
+            fullName += ' ' + middleName;
+        }
+
+        fullName += ' ' + lastName;
+
+        alert('Full Name : ' + fullName);
+    });
+});
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Message</title>
+    <style>
+        button{
+            background-color: rgb(101, 238, 243);
+            color: white;
+            font-size: 20px;
+            margin-top: 50px;
+            margin-left: 50%;
+            align-items: center;
+            text-align: center;
+            padding: 3px;
+            border: 3px solid black;
+            border-radius: 5px;
+           
+        }
+        button.hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body onload="triggerBtnClick()">
+
+
+   <p id="btn" onclick="alert('Welcome to the World of javascript ')"><button>Click Me</button></p>
+
+   <script>
+    function triggerBtnClick(){
+        document.getElementById("btn").click();
+    }
+   </script>
+</body>
+</html>
