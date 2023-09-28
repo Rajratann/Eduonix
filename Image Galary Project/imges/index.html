@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+
+
+    <div id="container">
+        <img src="img-1.jpeg" onclick="register()" id="image1" alt="Image 1">
+
+        <img src="img-2.jpeg" onclick="displayInfo()" id="image2" alt="Image 2" style="display: none;">
+
+        <img src="img-3.jpeg" onclick="rollDice()" id="image3" alt="Image 3" style="display: none;">
+
+        <img src="congrats-img.jpeg" onclick="generateCoupon()" id="image4" alt="Image 4" style="display: none;">
+    </div>
+
+    <div id="form" style="display: none;">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br><br>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" required><br><br>
+
+        <button class="btn" onclick="submitForm()">Submit</button>
+    </div>
+
+    <div id="displayInfo" style="display: none;"></div>
+    <div id="diceResult" style="display: none;"></div>
+    <div id="coupon" style="display: none;"></div>
+
+
+    <script src="script.js"> </script>
+
+</body>
+
+</html>
