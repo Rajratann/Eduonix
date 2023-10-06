@@ -1,0 +1,13 @@
+
+#coin-display{
+   background-color:rgb(29, 26, 26);
+   color: white;
+   margin: auto;
+   padding: 30px;
+   height: 550px;
+   display:grid;
+   grid-template-columns: auto auto auto;
+   grid-template-rows: 60px 70px 70px 60px;
+   gap: 70px;
+   border: 2px solid blue;
+} 
