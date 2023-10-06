@@ -1,506 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Royal Restraint </title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="Style.css">
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FETCHING DATA FROM API</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <div id="coin-display"></div>
 
-    <div class="header">
-        <a href="#" class="logo"> <img src="Images/logo img 2.jpg" alt=""></a>
-
-        <nav class="navbar">
-            <a href="#Home" class="active">Home</a>
-            <a href="#About us">About us</a>
-            <a href="#Team">Team</a>
-            <a href="#Menu">Menu</a>
-            <a href="#Reservatuon">Reservation</a>
-            <a href="#Contat Us">Contact Us</a>
-        </nav>
-        <div class="icon">
-            <i class="fas fa-bars" id="menu"></i>
-            <i class="fas fa-search"></i>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-shopping-cart"></i>
-        </div>
-    </div>
-    <div class="home" id="home">
-        <div class="swiper home-slider">
-            <div class="swiper-wrapper wrapper">
-                <div class="swiper-slide slide slide1">
-                    <div class="content">
-                        <img src="Images/plate logo img2.jpg" alt="">
-
-                        <h3>Delicious</h3>
-                        <h1>Gift Voucher</h1>
-                        <p>Give away your beloved customers</p>
-                        <a href="#" class="btn">Order Now</a>
-                    </div>
-                </div>
-                <div class="swiper-slide slide slide2">
-                    <div class="content">
-                        <img src="Images/plate logo img2.jpg" alt="">
-
-                        <h3>Sale of 10% of this dish</h3>
-                        <h1>The Fresh</h1>
-                        <p>Food Restaurant</p>
-                        <a href="#" class="btn">Order Now</a>
-                    </div>
-                </div>
-                <div class="swiper-slide slide slide3">
-                    <div class="content">
-                        <img src="Images/plate logo img2.jpg" alt="">
-
-                        <h3>We are open</h3>
-                        <h1>Fresh Fruits</h1>
-                        <p>You will love it</p>
-                        <a href="#" class="btn">Order Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
-    </div>
-    <!-- slider section end -->
-
-    <div class="welcome" id="about">
-        <h1 class="heading">Welcome To Royal</h1>
-        <center>
-            <h3 class="sub-heading">Luxury And Quality</h3>
-        </center>
-        <div class="box-container">
-            <div class="box">
-                <div class="image">
-                    <img src="Images/chef img.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>PROFFESIONAL LEVEL</h3>
-                    <P>Lorem Ipsum is simply dummy text of the printing
-                        and typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and
-                        scrambled it to make a type specimen book. </P>
-                    <a href="#" class="btn">Read More</a>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <img src="Images/food-img-3.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>FRESH FOOD GUARANTEED</h3>
-                    <P>Lorem Ipsum is simply dummy text of the printing
-                        and typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and
-                        scrambled it to make a type specimen book. </P>
-                    <a href="#" class="btn">Read More</a>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <img src="Images/chef img3.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>THE MENU IS PLENTFUL</h3>
-                    <P>Lorem Ipsum is simply dummy text of the printing
-                        and typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and
-                        scrambled it to make a type specimen book. </P>
-                    <a href="#" class="btn">Read More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-   <!-- menu sectuon start -->
-   <div class="our-menu" id="menu-card">
-    <h1 class="heading">Our Food Menu</h1>
-    <center>
-        <h3 class="sub-heading">What We Offer</h3>
-    </center>
-
-    <div class="menu-conatiner">
-        <div class="item">
-            <div class="item-name">
-                <h2>Main Course</h2>
-                <img src="Images/burger img.jpg" alt="">
-            </div>
-            <div class="item-body">
-                <div class="item-menu">
-                    <h3>Spper delicious zuppa toscana</h3>
-                    <span class="dots"></span>
-                    <h3>$40</h3>
-                    <ul>
-                        <li><a href="#">Chicken</a></li>
-                        <li><a href="#">South Indian</a></li>
-                        <li><a href="#">Italian</a></li>
-                        <li><a href="#">Spinch</a></li>
-                    </ul>
-                </div>
-                <div class="item-menu">
-                    <h3>Spper delicious zuppa toscana</h3>
-                    <span class="dots"></span>
-                    <h3>$30</h3>
-                    <ul>
-                        <li><a href="#">Mashroom</a></li>
-                        <li><a href="#">South Indian</a></li>
-                        <li><a href="#">Italian</a></li>
-                        <li><a href="#">Spinch</a></li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-        <div class="item">
-            <div class="item-name">
-                <h2>Soops & Salads</h2>
-                <img src="Images/soop-salads.jpg" alt="">
-            </div>
-            <div class="item-body">
-                <div class="item-menu">
-                    <h3>Spper delicious zuppa toscana</h3>
-                    <span class="dots"></span>
-                    <h3>$40</h3>
-                    <ul>
-                        <li><a href="#">Chicken</a></li>
-                        <li><a href="#">South Indian</a></li>
-                        <li><a href="#">Italian</a></li>
-                        <li><a href="#">Spinch</a></li>
-                    </ul>
-                </div>
-                <div class="item-menu">
-                    <h3>Spper delicious zuppa toscana</h3>
-                    <span class="dots"></span>
-                    <h3>$30</h3>
-                    <ul>
-                        <li><a href="#">Mashroom</a></li>
-                        <li><a href="#">South Indian</a></li>
-                        <li><a href="#">Italian</a></li>
-                        <li><a href="#">Spinch</a></li>
-                    </ul>
-                </div>
-                
-            </div>
-        </div>
-        <div class="item">
-            <div class="item-name">
-                <h2>Drinks</h2>
-                <img src="Images/cold-drinks-img.jpg" alt="">
-            </div>
-            <div class="item-body">
-                <div class="item-menu">
-                    <h3>Spper delicious zuppa toscana</h3>
-                    <span class="dots"></span>
-                    <h3>$40</h3>
-                    <ul>
-                        <li><a href="#">Chicken</a></li>
-                        <li><a href="#">South Indian</a></li>
-                        <li><a href="#">Italian</a></li>
-                        <li><a href="#">Spinch</a></li>
-                    </ul>
-                </div>
-                <div class="item-menu">
-                    <h3>Spper delicious zuppa toscana</h3>
-                    <span class="dots"></span>
-                    <h3>$30</h3>
-                    <ul>
-                        <li><a href="#">Mashroom</a></li>
-                        <li><a href="#">South Indian</a></li>
-                        <li><a href="#">Italian</a></li>
-                        <li><a href="#">Spinch</a></li>
-                    </ul>
-                </div>
-                
-            </div>
-        </div>
-        <div class="item">
-            <div class="item-name">
-                <h2>Desserts</h2>
-                <img src="Images/dessert-img.jpg" alt="">
-            </div>
-            <div class="item-body">
-                <div class="item-menu">
-                    <h3>Spper delicious zuppa toscana</h3>
-                    <span class="dots"></span>
-                    <h3>$40</h3>
-                    <ul>
-                        <li><a href="#">Chicken</a></li>
-                        <li><a href="#">South Indian</a></li>
-                        <li><a href="#">Italian</a></li>
-                        <li><a href="#">Spinch</a></li>
-                    </ul>
-                </div>
-                <div class="item-menu">
-                    <h3>Spper delicious zuppa toscana</h3>
-                    <span class="dots"></span>
-                    <h3>$30</h3>
-                    <ul>
-                        <li><a href="#">Mashroom</a></li>
-                        <li><a href="#">South Indian</a></li>
-                        <li><a href="#">Italian</a></li>
-                        <li><a href="#">Spinch</a></li>
-                    </ul>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-</div>
-
-
-   <!-- menu section end -->
-
-<!-- Team section start -->
-<br>
-<div class="team" id="team">
-    <h1 class="heading">  Our Talented Chef</h1>
-    <Center><h3 class="sub-heading"> Experience & Enthusiam</h3></Center>
-    <div class="chef">
-        <div class="item">
-            <div class="image">
-                <img src="Images/chef-img-3.jpg" alt="">
-            </div>
-            <div class="chef-info">
-                <h3>Mr.Jhon</h3>
-                <span>Master Chef</span>
-                <ul>
-                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="chef">
-            <div class="item">
-                <div class="image">
-                    <img src="Images/chef-img-5.jpg" alt="">
-                </div>
-                <div class="chef-info">
-                    <h3>Mr.harry</h3>
-                    <span>Master Chef</span>
-                    <ul>
-                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="chef">
-                <div class="item">
-                    <div class="image">
-                        <img src="Images/chef-img-6.jpg" alt="">
-                    </div>
-                    <div class="chef-info">
-                        <h3>Mr.Alex</h3>
-                        <span>Master Chef</span>
-                        <ul>
-                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-             </div>
-        </div>
-</div>
-
-<!-- Team section end -->
-
-<!-- Reservation section start -->
-
-<div class="reservation">
-    <div class="image">
-
-    </div>
-    <div class="form">
-        <h1 class="heading">Book a table</h1>
-        <center><h3 class="sub-heading">Check out our place</h3></center>
-        <form action="">
-            <div class="form-holder">
-                <select name="" id="">
-                    <option value="">1 People</option>
-                    <option value="">2 People</option>
-                    <option value="">3 People</option>
-                    <option value="">4 People</option>
-                </select>
-                <input type="date" name="" placeholder="Date">
-                <input type="time" name="" placeholder="Time">
-            </div>
-            <div>
-                <input type="text" name="" placeholder="Name">
-              
-                <input type="text" name="" placeholder="Phone">
-                <input type="email" name="" placeholder="Email">
-            </div>
-            <center><a href="#" class="btn">Book Now</a></center>
-        </form>
-    </div>
-</div>
-
-
-
-<!-- Reservation section end -->
-
-<!-- news section start -->
-
-<div class="blog welcome">
-    <h1 class="heading">HISTORY ABOUT ROYAL</h1>
-    <center><he class="sub-heading">Greate Articles</he></center>
-    <div class="box-container">
-        <div class="box">
-            <div class="image">
-                <img src="Images/hotel-img.jpg  " alt="">
-            </div>
-            <diV class="content">
-                <h3>PROFESSIONAL LEVEL</h3>
-                <P>Lorem Ipsum is simply dummy text of the printing
-                     and typesetting industry. Lorem Ipsum has been 
-                     the industry's standard dummy text ever since 
-                     the 1500s, when an unknown printer took a galley 
-                     of type and scrambled it to make a type specimen book. 
-                     It has survived not only five centuries, but also the 
-                     leap into electronic typesetting, remaining essentially
-                    unchanged. It was popularised in the 1960s with the release 
-                    of Letraset sheets containing Lorem Ipsum passages,</P>
-                    <a href="#">Read More</a>
-                    <!-- <img src="Images/food-img 2.jpg" alt=""> -->
-            </diV>
-        </div>
-        <div class="box">
-            <div class="image">
-                <img src="Images/food-img 1.jpg" alt="">
-            </div>
-            <diV class="content">
-                <h3>FRESH FOOD GUARENTEED</h3>
-                <P>Lorem Ipsum is simply dummy text of the printing
-                     and typesetting industry. Lorem Ipsum has been 
-                     the industry's standard dummy text ever since 
-                     the 1500s, when an unknown printer took a galley 
-                     of type and scrambled it to make a type specimen book. 
-                     It has survived not only five centuries, but also the 
-                     leap into electronic typesetting, remaining essentially
-                    unchanged. It was popularised in the 1960s with the release 
-                    of Letraset sheets containing Lorem Ipsum passages,</P>
-                    <a href="#">Read More</a>
-                    <!-- <img src="Images/food-img 2.jpg" alt=""> -->
-            </diV>
-        </div>
-        <div class="box">
-            <div class="image">
-                <img src="Images/dish-img.jpg" alt="">
-            </div>
-            <diV class="content">
-                <h3>THE MENU IS PLENTIFUL</h3>
-                <P>Lorem Ipsum is simply dummy text of the printing
-                     and typesetting industry. Lorem Ipsum has been 
-                     the industry's standard dummy text ever since 
-                     the 1500s, when an unknown printer took a galley 
-                     of type and scrambled it to make a type specimen book. 
-                     It has survived not only five centuries, but also the 
-                     leap into electronic typesetting, remaining essentially
-                    unchanged. It was popularised in the 1960s with the release 
-                    of Letraset sheets containing Lorem Ipsum passages,</P>
-                    <a href="#">Read More</a>
-                    <!-- <img src="Images/food-img 2.jpg" alt=""> -->
-            </diV>
-        </div>
-    </div>
-</div>
-<!-- news section end -->
-<!-- contat us section start -->
-<div class="contat-us">
-    <div class="image">
-
-    </div>
-    <div class="form">
-        <h1 class="heading">GIVE YOUR VALUABLE FEEDBACK</h1>
-        <center><h3 class="sub-heading"><b>2,00,000+ Happy Customers</b></h3></center>
-        <form action="">
-            <div class="form-holder"></div>
-            
-            <div>
-                <input type="text" name="" placeholder="Name">
-              
-                <input type="text" name="" placeholder="Phone">
-                <input type="email" name="" placeholder="Email">
-                <input name="" id="feedback" cols="50" rows="5" placeholder="feedback"></input>
-            </div>
-            <center><a href="#" class="btn">Submit</a></center>
-        </form>
-    </div>
-</div>  
-<!-- contat us section end -->
-<!-- footer section start -->
-
-<div class="footer">
-            <img src="Images/logo img 2.jpg" class="logo">
-        <div class="container">
-            <div>
-                <h3>ABOUT US</h3>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. 
-                    It has roots in a piece of classical Latin literature from 45 BC, 
-                    
-                </p>
-            </div>
-            <div>
-                <h3>GET NEWS & OFFERS</h3>
-                <input type="email" name="" placeholder="Enter your email">
-                <ul>
-                    <li><a href="#" class="fa-brands fa-twitter"></a></li>
-                    <li><a href="#" class="fa-brands fa-instagram"></a></li>
-                    <li><a href="#" class="fa-brands fa-whatsapp"></a></li>
-                </ul>
-            </div> 
-            <div>
-                <h3>CONTACT US</h3>
-                <span>Avirat Networks India</span>
-                <span>+ (91) 7709295660</span>
-                <span>aviratnetworks@gmail.com</span>
-                <span>www.aviratnetworks.in</span>
-            </div>
-        </div>
-</div>
-<!-- footer section end -->
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".home-slider", {
-            spaceBetween: 30,
-            centeredSlides: true,
-            autoplay: {
-                delay: 7500,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            loop: true,
-        });
-    </script>
-    <script type="text/javascript">
-        let menu = document.querySelector('#menu');
-        let navbar = document.querySelector('.navbar');
-
-        menu.onclick = () => {
-            menu.classList.toggle('fa-times');
-            navbar.classList.toggle('active');
+  <script>
+    async function fetchCoinData() {
+      try {
+        const response = await fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false');
+        if (!response.ok) {
+          throw new Error('Network response was not ok.');
         }
-    </script>
+        const data = await response.json();
+        return data;
+      } catch (error) {
+        console.error('Error fetching data:', error);
+        throw error;
+      }
+    }
 
+    async function displayCoinData() {
+      const coinDisplay = document.getElementById('coin-display');
+
+      try {
+        const coinData = await fetchCoinData();
+
+        // Display data for each coin
+        coinData.forEach(coin => {
+          const coinInfo = document.createElement('div');
+          coinInfo.innerHTML = `
+            <strong>Name:</strong> ${coin.name}<br>
+            <strong>ID:</strong> ${coin.id}<br>
+            <strong>Image:</strong> <img src="${coin.image}" alt="${coin.name}" width="20" height="20"><br>
+            <strong>Symbol:</strong> ${coin.symbol}<br>
+            <strong>Current Price:</strong> $${coin.current_price}<br>
+            <strong>Total Volume:</strong> $${coin.total_volume.toLocaleString()}<br><br>
+          `;
+          coinDisplay.appendChild(coinInfo);
+        });
+      } catch (error) {
+        coinDisplay.innerHTML = 'Error fetching data. Please try again later.';
+      }
+    }
+
+    displayCoinData();
+      </script>
+  
 </body>
-
 </html>
